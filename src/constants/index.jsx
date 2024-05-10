@@ -1,9 +1,0 @@
-const CONSTANTS = {
-  AUTHOR_ID: 1,
-  METHOD_GET: 'GET',
-  METHOD_PUT: 'PUT',
-  METHOD_POST: 'POST',
-  METHOD_DELETE: 'DELETE',
-};
-
-export default CONSTANTS;
