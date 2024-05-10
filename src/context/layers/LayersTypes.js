@@ -1,0 +1,1 @@
+export const UPDATE_CURRENT_SKILL = '@layer/UPDATE_CURRENT_SKILL'

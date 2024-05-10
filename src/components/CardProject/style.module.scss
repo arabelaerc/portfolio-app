@@ -1,0 +1,50 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+
+.projectCard {
+	max-width: 400px;
+	margin: 0 auto;
+
+	@include responsive-width($laptop-s) {
+		gap: 80px;
+		display: flex;
+		max-width: none;
+		align-items: center;
+	}
+}
+
+.projectCard span {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 28px;
+	font-family: "Merriweather", serif;
+
+	@include responsive-width($laptop-s) {
+		font-size: 48px;
+	}
+}
+
+.projectCard h3 {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 28px;
+	font-family: "Poetsen One", sans-serif;
+
+	@include responsive-width($laptop-s) {
+		font-size: 32px;
+	}
+}
+
+.projectCard img {
+	width: 400px;
+	border-radius: 18px;
+}
+
+.projectCard p {
+	margin: 0;
+	line-height: 1.4;
+	color: #71717A;
+	font-family: "Merriweather", serif;
+}

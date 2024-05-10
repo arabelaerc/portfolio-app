@@ -1,0 +1,74 @@
+@import '../../../../styles/vars';
+@import '../../../../styles/mixins';
+
+.talk {
+	padding: 60px 0;
+}
+
+.talk h2 {
+	color: #000;
+	font-family: "Poetsen One", sans-serif;
+}
+
+.form {
+	width: 100%;
+	margin: 0 auto 30px;
+	max-width: 500px;
+
+	@include responsive-width($laptop-s) {
+		margin: unset;
+	}
+}
+
+.form input {
+	width: 100%;
+	height: 44px;
+	display: block;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	font-family: "Merriweather", serif;
+}
+
+.form textarea::placeholder,
+.form input::placeholder {
+	font-family: "Merriweather", serif;
+}
+
+.form textarea {
+	height: 120px;
+	width: 100%;
+	padding: 10px 20px;
+	display: block;
+	resize: vertical;
+	margin-bottom: 20px;
+	font-family: "Merriweather", serif;
+}
+
+.form button {
+	color: #fff;
+	padding: 10px 20px;
+	background-color: #000;
+	font-family: "Merriweather", serif;
+}
+
+.container {
+
+	@include responsive-width ($laptop-s) {
+		gap: 80px;
+		display: flex;
+	}
+}
+
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+
+	@include responsive-width ($laptop-s) {
+		margin: 0;
+	}
+}
+
+.content p {
+	line-height: 1.4;
+	font-family: "Merriweather", serif;
+}

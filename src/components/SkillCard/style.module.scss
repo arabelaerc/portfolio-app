@@ -1,0 +1,28 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+
+.skillCard {
+	display: flex;
+	height: 120px;
+	row-gap: 10px;
+	cursor: pointer;
+	font-weight: 400;
+	min-width: 120px;
+	border-radius: 4px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	border: 2px xolid black;
+	font-family: "Merriweather", serif;
+
+	img {
+		width: 40px;
+	}
+
+	@include responsive-width ($laptop-s) {
+		height: 186px;
+		min-width: 186px;
+	}
+}
