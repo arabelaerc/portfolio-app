@@ -1,9 +1,9 @@
 import style from './style.module.scss'
 
-export default function About() {
+export default function About({ id }) {
 
 	return (
-		<section className={style.about}>
+		<section className={style.about} id={id}>
 			<div className={`${style.container} container`}>
 				<div className={style.image}>
 					<img src='/images/aboutme-arabela.svg' />

@@ -1,7 +1,7 @@
 import { SkillCard } from '../../../../components/SkillCard'
 import style from './style.module.scss'
 
-export default function Skills() {
+export default function Skills({ id }) {
 
 	const skills = [
 		{
@@ -31,7 +31,7 @@ export default function Skills() {
 	];
 
 	return (
-		<section className={style.skills}>
+		<section className={style.skills} id={id}>
 			<h2>My Skills</h2>
 
 			<div className="container">

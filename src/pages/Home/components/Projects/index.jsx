@@ -1,7 +1,7 @@
 import CardProject from '../../../../components/CardProject'
 import style from './style.module.scss'
 
-export default function Projects() {
+export default function Projects({ id }) {
 
 	const projects = [
 		{
@@ -34,7 +34,7 @@ export default function Projects() {
 	]
 
 	return (
-		<section className={style.projects}>
+		<section className={style.projects} id={id}>
 			<div className='container'>
 				<h2>My <b>Projects</b></h2>
 

@@ -10,11 +10,11 @@ export default function Home() {
 	return (
 		<>
 			<Introduce />
-			<Skills />
+			<Skills id='skills' />
 			<Experience />
-			<About />
-			<Projects />
-			<Talk />
+			<About id='about' />
+			<Projects id='projects' />
+			<Talk id='contact' />
 		</>
 	)
 }

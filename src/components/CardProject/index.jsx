@@ -2,11 +2,9 @@ import Image from '../Image'
 import style from './style.module.scss'
 
 export default function CardProject({ project }) {
-	console.log('project: ', project)
-
 	return (
 		<div className={style.projectCard}>
-			<Image image={project.image}/>
+			<Image image={project.image} />
 			<div className={style.projectCardContent}>
 				<span>{project.number}</span>
 				<h3>{project.title}</h3>

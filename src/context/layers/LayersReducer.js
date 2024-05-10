@@ -8,6 +8,11 @@ export default function reducer(state, action) {
 			return {
 				currentSkill: payload
 			}
+		case TYPE.TOGGLE_MODAL_REGISTER:
+			return {
+				...state,
+				modalRegister: payload
+			}
 		default:
 			return state
 	}

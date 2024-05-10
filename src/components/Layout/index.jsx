@@ -1,6 +1,8 @@
 import LayersProvider from '../../context/layers/LayersProvider'
 import { Footer } from '../Footer'
 import { Header } from '../Header'
+import { Layers } from '../../components/Layers'
+
 
 export function Layout(props) {
 	const {
@@ -14,6 +16,7 @@ export function Layout(props) {
 				{children}
 			</main>
 			<Footer />
+			<Layers />
 		</LayersProvider>
 	)
 }

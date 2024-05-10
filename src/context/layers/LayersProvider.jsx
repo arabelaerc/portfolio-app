@@ -2,6 +2,7 @@ import { createContext, useContext, useReducer } from 'react'
 import reducer from './LayersReducer'
 
 const initialState = {
+	modalRegister: false,
 	currentSkill: {
 		id: '01',
 		title: "Git",
@@ -18,6 +19,7 @@ function LayersProvider({ children }) {
 	return (
 		<LayerContext.Provider value={{
 			currentSkill: state.currentSkill,
+			modalRegister: state.modalRegister,
 			dispatch
 		}}>
 			{children}
