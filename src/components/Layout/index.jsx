@@ -1,7 +1,6 @@
 import LayersProvider from '../../context/layers/LayersProvider'
 import { Footer } from '../Footer'
 import { Header } from '../Header'
-import { Layers } from '../Layers'
 
 export function Layout(props) {
 	const {
@@ -10,12 +9,11 @@ export function Layout(props) {
 
 	return (
 		<LayersProvider>
-			<Header/>
+			<Header />
 			<main>
 				{children}
 			</main>
-			<Footer/>
-			<Layers/>
+			<Footer />
 		</LayersProvider>
 	)
 }

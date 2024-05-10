@@ -11,11 +11,16 @@
 	min-width: 120px;
 	border-radius: 4px;
 	align-items: center;
+	transform-origin: 0.3s;
 	flex-direction: column;
 	justify-content: center;
 	background-color: #fff;
 	border: 2px xolid black;
 	font-family: "Merriweather", serif;
+
+	&:hover {
+		background-color: #ededed;
+	}
 
 	img {
 		width: 40px;
