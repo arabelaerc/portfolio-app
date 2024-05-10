@@ -1,14 +1,6 @@
-# Pichincha Challenge
+# Challenge
 
-![App](./.readme-static/SCRREN_HOME.png)
-![App](./.readme-static/SCRREN_HOME_MOBILE.png)
-![App](./.readme-static/SCRREN_HOME_FILTER.png)
-![App](./.readme-static/MODAL_UPDATE.png)
-![App](./.readme-static/MODAL_REGISTER.png)
-![App](./.readme-static/SCREEN_UPDATE.png)
-![App](./.readme-static/SCREEN_DELETE.png)
-
-[See the app](https://github.com/arabelaerc/personal-portfolio-app/)
+[See the app](https://github.com/arabelaerc/portfolio-app/)
 
 This project was bootstrapped with [Vite](https://vitejs.dev/).
 
