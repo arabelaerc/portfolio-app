@@ -1,6 +1,7 @@
 import style from './style.module.scss'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import * as TYPE from '../../../../context/layers/LayersTypes'
 import { useLayerContext } from '../../../../context/layers/LayersProvider'
 
 export default function Talk({ id }) {
