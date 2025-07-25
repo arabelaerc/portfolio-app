@@ -1,5 +1,5 @@
-@import '../../../../styles/vars';
-@import '../../../../styles/mixins';
+@import "../../../../styles/vars";
+@import "../../../../styles/mixins";
 
 .talk {
 	padding: 60px 0;
@@ -8,6 +8,15 @@
 .talk h2 {
 	color: #000;
 	font-family: "Poetsen One", sans-serif;
+}
+
+.talk > div {
+	align-items: center;
+	justify-content: space-between;
+
+	@include responsive-width($tablet-m) {
+		display: flex;
+	}
 }
 
 .form {
@@ -26,12 +35,12 @@
 	display: block;
 	padding: 0 20px;
 	margin-bottom: 20px;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 }
 
 .form textarea::placeholder,
 .form input::placeholder {
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 }
 
 .form textarea {
@@ -41,19 +50,18 @@
 	display: block;
 	resize: vertical;
 	margin-bottom: 20px;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 }
 
 .form button {
 	color: #fff;
 	padding: 10px 20px;
 	background-color: #000;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 }
 
 .container {
-
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		gap: 80px;
 		display: flex;
 	}
@@ -63,12 +71,12 @@
 	max-width: 500px;
 	margin: 0 auto;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		margin: 0;
 	}
 }
 
 .content p {
 	line-height: 1.4;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 }

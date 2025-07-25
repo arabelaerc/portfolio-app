@@ -1,45 +1,91 @@
-@import '../../../../styles/vars';
-@import '../../../../styles/mixins';
+@import "../../../../styles/vars";
+@import "../../../../styles/mixins";
 
 .about {
 	padding: 30px 0;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		padding: 60px 0;
-
 	}
 }
 
 .about h2 {
 	color: $black;
-
 	margin-bottom: 30px;
 	font-family: "Poetsen One", sans-serif;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		margin-bottom: 60px;
 	}
-
-}
-
-.about p {
-	font-family: "Merriweather", serif;
 }
 
 .container {
-
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		gap: 80px;
 		display: flex;
 		align-items: center;
 	}
 }
 
+.experience {
+	@include responsive-width($laptop-s) {
+		display: flex;
+		margin-top: 21px;
+		align-items: center;
+	}
+}
+
+.experience > div {
+	width: 100%;
+
+	@include responsive-width($laptop-s) {
+		max-width: initial;
+	}
+}
+
+.experience ul {
+	overflow-wrap: break-word;
+}
+
+.experience h2 {
+	@include responsive-width($laptop-s) {
+		margin-top: 70px;
+		margin-bottom: 30px;
+	}
+}
+
+.experience h3 {
+	@include responsive-width($laptop-s) {
+		margin-bottom: 0;
+	}
+}
+
+.experience h4 {
+	@include responsive-width($laptop-s) {
+		font-family: "Karla", sans-serif;
+	}
+}
+
+.experience h3,
+.experience h5 {
+	font-family: "Poetsen One", sans-serif;
+}
+
+.experience * {
+	font-family: "Karla", serif;
+}
+
+.date {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .image {
 	text-align: center;
 	margin-bottom: 30px;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		width: 400px;
 		flex-shrink: 1;
 		text-align: left;
@@ -51,11 +97,12 @@
 	max-width: 500px;
 	margin: 0 auto;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		margin: 0;
 	}
 }
 
 .content p {
 	line-height: 1.4;
+	font-family: "Karla", serif;
 }

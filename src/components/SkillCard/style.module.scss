@@ -1,6 +1,5 @@
-@import '../../styles/vars';
-@import '../../styles/mixins';
-
+@import "../../styles/vars";
+@import "../../styles/mixins";
 
 .skillCard {
 	display: flex;
@@ -16,7 +15,7 @@
 	justify-content: center;
 	background-color: #fff;
 	border: 2px xolid black;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 
 	&:hover {
 		background-color: #ededed;
@@ -26,7 +25,7 @@
 		width: 40px;
 	}
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		height: 186px;
 		min-width: 186px;
 	}

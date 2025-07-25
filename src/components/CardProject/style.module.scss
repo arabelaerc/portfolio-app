@@ -1,6 +1,5 @@
-@import '../../styles/vars';
-@import '../../styles/mixins';
-
+@import "../../styles/vars";
+@import "../../styles/mixins";
 
 .projectCard {
 	max-width: 400px;
@@ -19,7 +18,7 @@
 	font-size: 24px;
 	font-weight: 700;
 	margin-bottom: 28px;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 
 	@include responsive-width($laptop-s) {
 		font-size: 48px;
@@ -45,6 +44,6 @@
 .projectCard p {
 	margin: 0;
 	line-height: 1.4;
-	color: #71717A;
-	font-family: "Merriweather", serif;
+	color: #71717a;
+	font-family: "Karla", serif;
 }

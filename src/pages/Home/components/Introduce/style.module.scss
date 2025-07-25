@@ -1,23 +1,22 @@
-@import '../../../../styles/vars';
-@import '../../../../styles/mixins';
-
+@import "../../../../styles/vars";
+@import "../../../../styles/mixins";
 
 .introduce {
 	padding: 30px 0;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		padding: 60px 0;
 	}
 }
 
-.introduce>div {
+.introduce > div {
 	display: flex;
 	row-gap: 35px;
 	max-width: 1000px;
 	align-items: center;
 	flex-direction: column;
 
-	@include responsive-width ($laptop-s) {
+	@include responsive-width($laptop-s) {
 		gap: 60px;
 		display: flex;
 		flex-direction: row;
@@ -42,5 +41,5 @@
 
 .introduce p {
 	margin: 0;
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 }

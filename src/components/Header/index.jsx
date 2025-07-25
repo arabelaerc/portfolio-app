@@ -5,8 +5,8 @@ export function Header() {
 	return (
 		<header className={style.header}>
 			<div className='container'>
-				<img src='/images/logo-ara.svg' />
-				<div>
+				<p>arabela</p>
+				<div className={style.list}>
 					<button
 						onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
 						About me
